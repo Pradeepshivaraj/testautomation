@@ -43,7 +43,7 @@ public class Helper extends BrowserManager {
 		getElement(locator).sendKeys(value);
 	}
 	
-	public static boolean elementDisplayed(By locator) throws CFITRException
+	public static boolean IsElementDisplayed(By locator) throws CFITRException
 	{
 		return getElement(locator).isDisplayed();
 	}

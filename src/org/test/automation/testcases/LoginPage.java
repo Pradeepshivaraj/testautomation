@@ -4,10 +4,8 @@ import org.openqa.selenium.By;
 import org.test.automation.base.BrowserManager;
 import org.test.automation.base.Helper;
 import org.test.automation.exception.CFITRException;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-public class Login extends BrowserManager {
+public class LoginPage extends BrowserManager {
 
 	By menuLink = By.linkText("MENU1");
 	By signOutLink = By.linkText("Sign Out");
@@ -16,18 +14,25 @@ public class Login extends BrowserManager {
 
 	// public static void main(String[] args) throws InterruptedException {
 
-	@Test
-	public void testing() throws CFITRException {
-
+	public boolean isHeaderDisplayed() throws CFITRException {
 		log.info("Step1:: Verifying home page header");
-		Assert.assertTrue(Helper.elementDisplayed(header));
+		return Helper.IsElementDisplayed(header);
+	}
+
+	public void clickMenuLink() throws CFITRException {
 		log.info("Step2:: Clicking on menu dropdown");
 		Helper.click(menuLink);
+	}
+
+	public void clickSignOutLink() throws CFITRException {
 		log.info("Step3:: Clicking on signout link");
 		Helper.click(signOutLink);
-		log.info("Step4:: Verifying signout page");
-		Assert.assertTrue(Helper.elementDisplayed(signout));
+	}
 
+	public boolean verifySignOutPage() throws CFITRException {
+
+		log.info("Step4:: Verifying signout page");
+		return Helper.IsElementDisplayed(signout);
 	}
 
 }

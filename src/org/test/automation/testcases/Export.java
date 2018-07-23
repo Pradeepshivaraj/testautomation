@@ -55,7 +55,7 @@ public class Export extends BrowserManager {
 		r.keyRelease(KeyEvent.VK_ENTER);
 
 		log.info("Step9:: Verify download success message");
-		Assert.assertTrue(Helper.elementDisplayed(successmsg));
+		Assert.assertTrue(Helper.IsElementDisplayed(successmsg));
 
 	}
 

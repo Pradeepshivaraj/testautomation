@@ -52,7 +52,7 @@ public class Import extends BrowserManager {
 		Helper.click(save);
 		
 		log.info("Step9:: Verify import successfull message");
-		Assert.assertTrue(Helper.elementDisplayed(msg));
+		Assert.assertTrue(Helper.IsElementDisplayed(msg));
 		
 		
 

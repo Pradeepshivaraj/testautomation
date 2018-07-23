@@ -37,7 +37,7 @@ public class Create_Proj extends BrowserManager{
 		Thread.sleep(5000);
 		waitForPageLoaded();
 		log.info("Step1:: Verifying home page header");
-		Assert.assertTrue(Helper.elementDisplayed(header));
+		Assert.assertTrue(Helper.IsElementDisplayed(header));
 		log.info("Step2:: Click on add an engagement link");
 		Helper.click(Addenglink);
 		log.info("Step3:: Enter clientname");
@@ -64,7 +64,7 @@ public class Create_Proj extends BrowserManager{
 		log.info("Step10:: click on client name");
 		Helper.click(verify);
 		log.info("Step11:: verify eng created");
-		Assert.assertTrue(Helper.elementDisplayed(engcreated));
+		Assert.assertTrue(Helper.IsElementDisplayed(engcreated));
 		
 		
 	}
