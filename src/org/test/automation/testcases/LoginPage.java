@@ -7,7 +7,7 @@ import org.test.automation.exception.CFITRException;
 
 public class LoginPage extends BrowserManager {
 
-	By menuLink = By.linkText("MENU1");
+	By menuLink = By.linkText("MENU");
 	By signOutLink = By.linkText("Sign Out");
 	By signout = By.tagName("h1");
 	By header = By.xpath("//*[text()='Recovery and Remediation']");

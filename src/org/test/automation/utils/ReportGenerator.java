@@ -11,14 +11,13 @@ import java.util.Iterator;
 import org.test.automation.base.BrowserManager;
 import org.test.automation.exception.CFITRException;
 
-
 public class ReportGenerator extends BrowserManager {
-	
+
 	public static void writeToHTML(String url, ArrayList<String> _Modules, ArrayList<String> tCList,
 			ArrayList<Integer> totalList2, ArrayList<Integer> passedList2, ArrayList<Integer> failedList2,
 			ArrayList<Integer> skippedList2, int pc, int fc, int sc, int total, ArrayList<String> totalTimeList2,
 			String reportPath, ArrayList<String> exceptionList, ArrayList<String> snapShotList2, String totalTimeTaken,
-			String msg,String tcDetails) throws CFITRException, IOException {
+			String msg, String tcDetails) throws CFITRException, IOException {
 
 		StringBuilder sb = new StringBuilder();
 
@@ -31,6 +30,9 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("<body>");
 		sb.append("<br>");
 		sb.append("<br>");
+		sb.append("<table>");
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("<font family= \"Times New Roman\">");
 
 		sb.append("Hi Team,");
@@ -41,62 +43,80 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("</b>");
 		sb.append("<br>");
 		sb.append("<br>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("Please find below Test Execution Results for ");
 		sb.append("<b>");
 		sb.append("Test Execution.");
-		sb.append("<br>");
-		sb.append("<br>");
 		sb.append("</b>");
-
-		sb.append("<u>");
+		sb.append("<br>");
+		sb.append("<br>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("Environment");
 		sb.append("<b>");
-		sb.append("</u>");
+
 		sb.append(" : " + url);
 		sb.append("</b>");
 		sb.append("<br>");
 		sb.append("<br>");
-
-		sb.append("<u>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("Operating System");
 		sb.append("<b>");
-		sb.append("</u>");
+		
 		sb.append(" : " + System.getProperty("os.name"));
 		sb.append("</b>");
 		sb.append("<br>");
 		sb.append("<br>");
-
-		sb.append("<u>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("OS Architecture");
 		sb.append("<b>");
-		sb.append("</u>");
+
 		sb.append(" : " + System.getProperty("os.arch"));
 		sb.append("</b>");
 		sb.append("<br>");
 		sb.append("<br>");
-
-		sb.append("<u>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("Java Version");
 		sb.append("<b>");
-		sb.append("</u>");
+
 		sb.append(" : " + System.getProperty("java.version"));
 		sb.append("</b>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<br>");
 		sb.append("<br>");
 		sb.append("<br>");
 		sb.append("</font>");
+		sb.append("</table>");
 
 		sb.append("<table>");
-		sb.append("<br>");
-		sb.append("<br>");
+
 		if (exceptionList.size() > 0) {
-			sb.append("<font color= \"red\">");
-			sb.append("<br>");
-			sb.append("<br>");
+			sb.append("<tr>");
+			sb.append("<td>");
+			sb.append("<font color= \"red\",family= \"Times New Roman\">");
 			sb.append("<b>");
 			sb.append("Failures : ");
 			sb.append("</b>");
-			sb.append("<br>");
 			sb.append("</font>");
+			sb.append("</td>");
+			sb.append("</tr>");
 
 			sb.append("<th>");
 			sb.append("<tr>");
@@ -137,7 +157,7 @@ public class ReportGenerator extends BrowserManager {
 						"<td style = \"background: #E0EEEE; color: #000; font-weight: bold;text-align: left;width:15%\">");
 				sb.append("&nbsp;");
 
-				sb.append(StringUtils.toCamelCase(tc.next().toUpperCase()));
+				sb.append(tc.next().toUpperCase());
 				sb.append("</td>");
 
 				sb.append(
@@ -161,7 +181,28 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("<br>");
 		sb.append("<br>");
 		sb.append("<br>");
-		
+
+		sb.append("<tr>");
+		sb.append("<td>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
+		sb.append("</td>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>");
+		sb.append("</td>");
+		sb.append("</tr>");
+
 		sb.append("<tr>");
 		sb.append("<td>");
 		sb.append("<font color= \"Green\">");
@@ -171,7 +212,7 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("</font>");
 		sb.append("</td>");
 		sb.append("</tr>");
-		
+
 		sb.append("<tr>");
 		sb.append("<td style = \"background: #05B8CC; color: #000; font-weight: bold;text-align: center;width:15%\">");
 		sb.append("Name of the Module");
@@ -203,7 +244,6 @@ public class ReportGenerator extends BrowserManager {
 
 		sb.append("</td>");
 		sb.append("</tr>");
-		sb.append("</th>");
 		Iterator<String> it = _Modules.iterator();
 		Iterator<Integer> totalList = totalList2.iterator();
 		Iterator<Integer> passedList = passedList2.iterator();
@@ -284,6 +324,8 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("<br>");
 		sb.append("<br>");
 
+		sb.append("<tr>");
+		sb.append("<td>");
 		sb.append("<font color= \"Green\">");
 		sb.append("<br>");
 		sb.append("<b>");
@@ -291,6 +333,8 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("</b>");
 		sb.append("<br>");
 		sb.append("</font>");
+		sb.append("</td>");
+		sb.append("</tr>");
 
 		sb.append("<tr>");
 		sb.append("<td");
@@ -313,7 +357,7 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("</body>");
 		sb.append("</html>");
 
-		// System.out.println(sb.toString());
+		System.out.println(sb.toString());
 
 		File file = new File(System.getProperty("user.dir") + "\\TestReport.html");
 		if (!file.exists()) {
@@ -325,9 +369,9 @@ public class ReportGenerator extends BrowserManager {
 		bw.write(sb.toString());
 		bw.close();
 	}
-	
-	public static String TCwriteToHTML(String moduleName, ArrayList<String> tcNameList, ArrayList<String> executionStatusList)
-			throws CFITRException, IOException {
+
+	public static String TCwriteToHTML(String moduleName, ArrayList<String> tcNameList,
+			ArrayList<String> executionStatusList) throws CFITRException, IOException {
 
 		StringBuilder sb = new StringBuilder();
 
@@ -338,16 +382,9 @@ public class ReportGenerator extends BrowserManager {
 		sb.append("<head>");
 		sb.append("</head>");
 		sb.append("<body>");
-		sb.append("<br>");
-		sb.append("<br>");
-		sb.append("<table");
+		sb.append("<table>");
 		sb.append("<th>");
 		sb.append("<tr>");
-		sb.append("<font color= \"Green\">");
-		sb.append("<b>");
-		sb.append("</b>");
-		sb.append("<br>");
-		sb.append("</font>");
 		sb.append("<td style = \"background: #05B8CC; color: #000; font-weight: bold;text-align: center;width:15%\">");
 		sb.append("Name of the Module");
 		sb.append("</td>");
@@ -365,11 +402,13 @@ public class ReportGenerator extends BrowserManager {
 
 		while (tc.hasNext()) {
 			sb.append("<tr>");
-			sb.append("<td style = \"border:solid 1px; background: #FFFFFF; color: #000; font-weight: bold;text-align: center;width:15%\">");
+			sb.append(
+					"<td style = \"border:solid 1px; background: #FFFFFF; color: #000; font-weight: bold;text-align: center;width:15%\">");
 			sb.append(moduleName);
 			sb.append("</td>");
-			sb.append("<td style = \"border:solid 1px; background: #FFFFFF; color: #000; font-weight: bold;text-align: center;width:15%\">");
-			sb.append(tc.next());
+			sb.append(
+					"<td style = \"border:solid 1px; background: #FFFFFF; color: #000; font-weight: bold;text-align: center;width:15%\">");
+			sb.append(StringUtils.toCamelCase(tc.next().toUpperCase()));
 			sb.append("</td>");
 
 			String _Status = status.next();
@@ -377,7 +416,8 @@ public class ReportGenerator extends BrowserManager {
 			System.out.println("::" + _Status + "::" + TCPASSED + "::" + TCFAILED + "::" + TCSKIPPED);
 
 			if (_Status.equals(TCPASSED)) {
-				sb.append("<td style = \"border:solid 1px; background: #FFFFFF; color: green; font-weight: bold;text-align: center;width:15%\">");
+				sb.append(
+						"<td style = \"border:solid 1px; background: #FFFFFF; color: green; font-weight: bold;text-align: center;width:15%\">");
 				sb.append(_Status);
 				sb.append("</td>");
 			} else if (_Status.equals(TCFAILED)) {
@@ -410,6 +450,6 @@ public class ReportGenerator extends BrowserManager {
 		bw.close();
 		return sb.toString();
 	}
-	
+
 
 }

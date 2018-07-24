@@ -99,7 +99,7 @@ public class BrowserManager {
 		startTime = DateUtils.DateTime();
 		log.info("Execution Started at " + startTime);
 
-		startBrowser("FIREFOX");
+		driver = startBrowser("FIREFOX");
 		launchURL(URL);
 	}
 
@@ -108,8 +108,8 @@ public class BrowserManager {
 
 	}
 
-	private void startBrowser(String browser) throws Exception {
-
+	private WebDriver startBrowser(String browser) throws Exception {
+		WebDriver driver = null;
 		switch (browser) {
 		case "FIREFOX":
 			System.setProperty("webdriver.gecko.driver", "./softwares/geckodriver.exe");
@@ -122,6 +122,7 @@ public class BrowserManager {
 			throw new Exception("Invalid browserName");
 
 		}
+		return driver;
 
 	}
 

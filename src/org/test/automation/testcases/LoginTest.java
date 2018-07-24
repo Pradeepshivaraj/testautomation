@@ -1,10 +1,12 @@
 package org.test.automation.testcases;
 
+import org.test.automation.base.BrowserManager;
 import org.test.automation.exception.CFITRException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+
+public class LoginTest extends BrowserManager {
 
 	LoginPage login = new LoginPage();
 

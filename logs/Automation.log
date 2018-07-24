@@ -1,18 +1,47 @@
- INFO 2018-07-23 15:11:21,807 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 23-07-2018-03-11-21
- INFO 2018-07-23 15:12:00,004 [base.BrowserManager] [main] [Login.java:22] - Step1:: Verifying home page header
- INFO 2018-07-23 15:12:02,795 [base.BrowserManager] [main] [Login.java:24] - Step2:: Clicking on menu dropdown
- INFO 2018-07-23 15:12:32,904 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.linkText: MENU1
- INFO 2018-07-23 15:12:33,049 [base.BrowserManager] [main] [BrowserManager.java:197] - ####Test Case FAILED:testing
- INFO 2018-07-23 15:12:33,173 [base.BrowserManager] [main] [BrowserManager.java:291] - Execution Completed at: 23-07-2018-03-12-33
- INFO 2018-07-23 15:12:33,222 [base.BrowserManager] [main] [BrowserManager.java:296] - Time Taken for Execution: 1 Minute(s), 12 Second(s).
- INFO 2018-07-23 15:12:33,222 [base.BrowserManager] [main] [BrowserManager.java:299] - Total Time Taken for Execution: 
- INFO 2018-07-23 15:15:25,646 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 23-07-2018-03-15-25
- INFO 2018-07-23 15:15:58,793 [base.BrowserManager] [main] [Login.java:22] - Step1:: Verifying home page header
- INFO 2018-07-23 15:16:01,613 [base.BrowserManager] [main] [Login.java:24] - Step2:: Clicking on menu dropdown
- INFO 2018-07-23 15:16:11,895 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.linkText: MENU1
- INFO 2018-07-23 15:16:12,024 [base.BrowserManager] [main] [BrowserManager.java:197] - ####Test Case FAILED:testing
- INFO 2018-07-23 15:16:12,109 [base.BrowserManager] [main] [BrowserManager.java:292] - Execution Completed at: 23-07-2018-03-16-12
- INFO 2018-07-23 15:16:12,110 [base.BrowserManager] [main] [BrowserManager.java:297] - Time Taken for Execution: 47 Second(s).
- INFO 2018-07-23 15:16:12,111 [base.BrowserManager] [main] [BrowserManager.java:300] - Total Time Taken for Execution: 
- INFO 2018-07-23 15:16:12,141 [base.BrowserManager] [main] [BrowserManager.java:313] - Folder: D:\Java\Banking\Flipkart\Reports Copied to D:\Java\Banking\Flipkart\TestAutomationReports\23-07-2018-03-16-12
- INFO 2018-07-23 15:16:12,148 [base.BrowserManager] [main] [BrowserManager.java:317] - File: D:\Java\Banking\Flipkart\TestReport.html Copied to D:\Java\Banking\Flipkart\TestAutomationReports\23-07-2018-03-16-12
+ INFO 2018-07-24 17:47:51,243 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 24-07-2018-05-47-51
+ INFO 2018-07-24 17:48:29,311 [base.BrowserManager] [main] [Export.java:31] - Step1:: Click Client name
+ INFO 2018-07-24 17:48:31,636 [base.BrowserManager] [main] [Export.java:33] - Step2:: select Engagement name
+ INFO 2018-07-24 17:48:32,017 [base.BrowserManager] [main] [Export.java:35] - Step3:: Click Engagement name
+ INFO 2018-07-24 17:48:34,897 [base.BrowserManager] [main] [Export.java:37] - Step4:: Click Transaction tab
+ INFO 2018-07-24 17:48:36,231 [base.BrowserManager] [main] [Export.java:39] - Step5:: Click on Header dropdown
+ INFO 2018-07-24 17:48:40,312 [base.BrowserManager] [main] [Export.java:41] - Step6:: Click on prepare export
+ INFO 2018-07-24 17:48:41,062 [base.BrowserManager] [main] [Export.java:43] - Step7:: Click on prepare button
+ INFO 2018-07-24 17:48:41,540 [base.BrowserManager] [main] [Export.java:45] - Step8:: Click on save button
+ INFO 2018-07-24 17:48:48,089 [base.BrowserManager] [main] [Export.java:57] - Step9:: Verify download success message
+ INFO 2018-07-24 17:48:48,172 [base.BrowserManager] [main] [BrowserManager.java:193] - ####Test Case PASSED:testing
+ INFO 2018-07-24 17:48:48,408 [base.BrowserManager] [main] [BrowserManager.java:292] - Execution Completed at: 24-07-2018-05-48-48
+ INFO 2018-07-24 17:48:48,411 [base.BrowserManager] [main] [BrowserManager.java:297] - Time Taken for Execution: 57 Second(s).
+ INFO 2018-07-24 17:48:48,412 [base.BrowserManager] [main] [BrowserManager.java:300] - Total Time Taken for Execution: 
+ INFO 2018-07-24 17:48:48,423 [base.BrowserManager] [main] [BrowserManager.java:313] - Folder: C:\Users\pshivaraju\Documents\GitHub\testautomation\Reports Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-05-48-48
+ INFO 2018-07-24 17:48:48,435 [base.BrowserManager] [main] [BrowserManager.java:317] - File: C:\Users\pshivaraju\Documents\GitHub\testautomation\TestReport.html Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-05-48-48
+ INFO 2018-07-24 17:50:06,382 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 24-07-2018-05-50-06
+ INFO 2018-07-24 17:50:38,528 [base.BrowserManager] [main] [Export.java:31] - Step1:: Click Client name
+ INFO 2018-07-24 17:50:43,625 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.xpath: (//*[text()='Automation11'])[2]
+ INFO 2018-07-24 17:50:43,730 [base.BrowserManager] [main] [BrowserManager.java:197] - ####Test Case FAILED:testing
+ INFO 2018-07-24 17:50:43,923 [base.BrowserManager] [main] [BrowserManager.java:292] - Execution Completed at: 24-07-2018-05-50-43
+ INFO 2018-07-24 17:50:43,925 [base.BrowserManager] [main] [BrowserManager.java:297] - Time Taken for Execution: 37 Second(s).
+ INFO 2018-07-24 17:50:43,926 [base.BrowserManager] [main] [BrowserManager.java:300] - Total Time Taken for Execution: 
+ INFO 2018-07-24 17:50:43,939 [base.BrowserManager] [main] [BrowserManager.java:313] - Folder: C:\Users\pshivaraju\Documents\GitHub\testautomation\Reports Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-05-50-43
+ INFO 2018-07-24 17:50:43,946 [base.BrowserManager] [main] [BrowserManager.java:317] - File: C:\Users\pshivaraju\Documents\GitHub\testautomation\TestReport.html Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-05-50-43
+ INFO 2018-07-24 17:57:24,443 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 24-07-2018-05-57-24
+ INFO 2018-07-24 17:59:17,218 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 24-07-2018-05-59-17
+ INFO 2018-07-24 18:00:01,196 [base.BrowserManager] [main] [LoginPage.java:18] - Step1:: Verifying home page header
+ INFO 2018-07-24 18:00:03,574 [base.BrowserManager] [main] [LoginPage.java:23] - Step2:: Clicking on menu dropdown
+ INFO 2018-07-24 18:00:08,892 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.linkText: MENU1
+ INFO 2018-07-24 18:00:09,025 [base.BrowserManager] [main] [BrowserManager.java:198] - ####Test Case FAILED:testing
+ INFO 2018-07-24 18:00:09,208 [base.BrowserManager] [main] [BrowserManager.java:293] - Execution Completed at: 24-07-2018-06-00-09
+ INFO 2018-07-24 18:00:09,211 [base.BrowserManager] [main] [BrowserManager.java:298] - Time Taken for Execution: 52 Second(s).
+ INFO 2018-07-24 18:00:09,213 [base.BrowserManager] [main] [BrowserManager.java:301] - Total Time Taken for Execution: 
+ INFO 2018-07-24 18:00:09,234 [base.BrowserManager] [main] [BrowserManager.java:314] - Folder: C:\Users\pshivaraju\Documents\GitHub\testautomation\Reports Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-06-00-09
+ INFO 2018-07-24 18:00:09,244 [base.BrowserManager] [main] [BrowserManager.java:318] - File: C:\Users\pshivaraju\Documents\GitHub\testautomation\TestReport.html Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-06-00-09
+ INFO 2018-07-24 18:00:37,281 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 24-07-2018-06-00-37
+ INFO 2018-07-24 18:01:07,567 [base.BrowserManager] [main] [LoginPage.java:18] - Step1:: Verifying home page header
+ INFO 2018-07-24 18:01:09,379 [base.BrowserManager] [main] [LoginPage.java:23] - Step2:: Clicking on menu dropdown
+ INFO 2018-07-24 18:01:09,854 [base.BrowserManager] [main] [LoginPage.java:28] - Step3:: Clicking on signout link
+ INFO 2018-07-24 18:01:11,719 [base.BrowserManager] [main] [LoginPage.java:34] - Step4:: Verifying signout page
+ INFO 2018-07-24 18:01:11,869 [base.BrowserManager] [main] [BrowserManager.java:194] - ####Test Case PASSED:testing
+ INFO 2018-07-24 18:01:11,969 [base.BrowserManager] [main] [BrowserManager.java:293] - Execution Completed at: 24-07-2018-06-01-11
+ INFO 2018-07-24 18:01:11,971 [base.BrowserManager] [main] [BrowserManager.java:298] - Time Taken for Execution: 34 Second(s).
+ INFO 2018-07-24 18:01:11,973 [base.BrowserManager] [main] [BrowserManager.java:301] - Total Time Taken for Execution: 
+ INFO 2018-07-24 18:01:11,985 [base.BrowserManager] [main] [BrowserManager.java:314] - Folder: C:\Users\pshivaraju\Documents\GitHub\testautomation\Reports Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-06-01-11
+ INFO 2018-07-24 18:01:12,002 [base.BrowserManager] [main] [BrowserManager.java:318] - File: C:\Users\pshivaraju\Documents\GitHub\testautomation\TestReport.html Copied to C:\Users\pshivaraju\Documents\GitHub\testautomation\TestAutomationReports\24-07-2018-06-01-11

@@ -1,0 +1,18 @@
+ INFO 2018-07-23 15:11:21,807 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 23-07-2018-03-11-21
+ INFO 2018-07-23 15:12:00,004 [base.BrowserManager] [main] [Login.java:22] - Step1:: Verifying home page header
+ INFO 2018-07-23 15:12:02,795 [base.BrowserManager] [main] [Login.java:24] - Step2:: Clicking on menu dropdown
+ INFO 2018-07-23 15:12:32,904 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.linkText: MENU1
+ INFO 2018-07-23 15:12:33,049 [base.BrowserManager] [main] [BrowserManager.java:197] - ####Test Case FAILED:testing
+ INFO 2018-07-23 15:12:33,173 [base.BrowserManager] [main] [BrowserManager.java:291] - Execution Completed at: 23-07-2018-03-12-33
+ INFO 2018-07-23 15:12:33,222 [base.BrowserManager] [main] [BrowserManager.java:296] - Time Taken for Execution: 1 Minute(s), 12 Second(s).
+ INFO 2018-07-23 15:12:33,222 [base.BrowserManager] [main] [BrowserManager.java:299] - Total Time Taken for Execution: 
+ INFO 2018-07-23 15:15:25,646 [base.BrowserManager] [main] [BrowserManager.java:100] - Execution Started at 23-07-2018-03-15-25
+ INFO 2018-07-23 15:15:58,793 [base.BrowserManager] [main] [Login.java:22] - Step1:: Verifying home page header
+ INFO 2018-07-23 15:16:01,613 [base.BrowserManager] [main] [Login.java:24] - Step2:: Clicking on menu dropdown
+ INFO 2018-07-23 15:16:11,895 [base.BrowserManager] [main] [Helper.java:28] - Element is not available: By.linkText: MENU1
+ INFO 2018-07-23 15:16:12,024 [base.BrowserManager] [main] [BrowserManager.java:197] - ####Test Case FAILED:testing
+ INFO 2018-07-23 15:16:12,109 [base.BrowserManager] [main] [BrowserManager.java:292] - Execution Completed at: 23-07-2018-03-16-12
+ INFO 2018-07-23 15:16:12,110 [base.BrowserManager] [main] [BrowserManager.java:297] - Time Taken for Execution: 47 Second(s).
+ INFO 2018-07-23 15:16:12,111 [base.BrowserManager] [main] [BrowserManager.java:300] - Total Time Taken for Execution: 
+ INFO 2018-07-23 15:16:12,141 [base.BrowserManager] [main] [BrowserManager.java:313] - Folder: D:\Java\Banking\Flipkart\Reports Copied to D:\Java\Banking\Flipkart\TestAutomationReports\23-07-2018-03-16-12
+ INFO 2018-07-23 15:16:12,148 [base.BrowserManager] [main] [BrowserManager.java:317] - File: D:\Java\Banking\Flipkart\TestReport.html Copied to D:\Java\Banking\Flipkart\TestAutomationReports\23-07-2018-03-16-12
