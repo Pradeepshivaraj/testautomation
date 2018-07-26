@@ -18,5 +18,14 @@ public class LoginTest extends BrowserManager {
 		login.clickSignOutLink();
 		Assert.assertTrue(login.verifySignOutPage());
 	}
+	
+	@Test
+	public void testing123() throws CFITRException {
+
+		Assert.assertTrue(login.isHeaderDisplayed());
+		login.clickMenuLink();
+		login.clickSignOutLink();
+		Assert.assertTrue(login.verifySignOutPage());
+	}
 
 }
